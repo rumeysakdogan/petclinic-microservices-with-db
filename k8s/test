@@ -1,0 +1,9 @@
+metadata:
+  name: api-gateway
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+spec:
+  tls:
+  - hosts:
+    - petclinic.aws-devops-journey-of-rumeysadogan.net
+    secretName: petclinic-tls
